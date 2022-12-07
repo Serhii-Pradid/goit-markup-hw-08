@@ -5,6 +5,7 @@
 
 .team-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: space-between;
 }
@@ -35,10 +36,19 @@
 }
 
 .team-list__item {
-    flex-basis: calc((100% - 90px) / 4);
+    /*flex-basis: calc((100% - 90px) / 4);*/
+    width: 100%;
     background: #ffffff;
     border: 1px solid #eeeeee;
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 720px) {
+            width:calc((100% - 30px) / 2); ;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 90px) / 4);
+        }
 }
 
 /*оформление иконок соц.сетей*/

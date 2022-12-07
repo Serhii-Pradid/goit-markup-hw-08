@@ -32,8 +32,8 @@ button {
 img {
   display: block;
   max-width: 100%;
-  /*width:100%;
-  height:auto;*/
+  width: 100%;
+  height: auto;
 }
 
 .hero {
@@ -42,10 +42,18 @@ img {
 }
 
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666;
+  font-size: 28px;
+  line-height: 1.1786;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666;
+  }
 }
 
 h1,
@@ -87,8 +95,14 @@ p {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .header {
@@ -554,7 +568,7 @@ p {
 
 .desk {
   padding-top: 60px;
-  padding-bottom: 0;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .desk {
@@ -669,6 +683,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -700,11 +716,21 @@ p {
 }
 
 .team-list__item {
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
+  /*flex-basis: calc((100% - 90px) / 4);*/
+  width: 100%;
   background: #ffffff;
   border: 1px solid #eeeeee;
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 720px) {
+  .team-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 /*оформление иконок соц.сетей*/
