@@ -1,0 +1,37 @@
+.activity {
+    text-align: center;
+}
+
+.kinds {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.kinds__item {
+    flex-basis: calc((100% - 60px) / 3);
+    
+}
+
+.kinds__thumb {
+    position: relative;
+}
+
+.kinds__text {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1429;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
