@@ -37,8 +37,14 @@ img {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 198px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 280px;
+  }
 }
 
 .title {
@@ -241,8 +247,8 @@ p {
 
 /*багатошаровий фон*/
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
@@ -251,16 +257,36 @@ p {
   background-size: cover;
   background-position: center;
 }
+@media screen and (min-width: 720px) {
+  .hero {
+    width: 720px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1600px;
+    height: 600px;
+  }
+}
 
 .hero__title {
-  width: 696px;
+  width: 360px;
   margin-right: auto;
   margin-left: auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636;
+  font-size: 26px;
+  line-height: 1.6154;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636;
+  }
 }
 
 .hero__button {
@@ -637,6 +663,11 @@ p {
 .activity {
   text-align: center;
 }
+@media screen and (max-width: 1200px) {
+  .activity {
+    display: none;
+  }
+}
 
 .kinds {
   display: -webkit-box;
@@ -795,6 +826,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -803,8 +836,17 @@ p {
 
 .clients-list__logo {
   height: 92px;
-  -ms-flex-preferred-size: calc((100% - 150px) / 6);
-      flex-basis: calc((100% - 150px) / 6);
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 720px) {
+  .clients-list__logo {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list__logo {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients-list__link {
@@ -835,8 +877,7 @@ p {
 
 .client-list__logo {
   height: 92px;
-  -ms-flex-preferred-size: calc((100% - 150px) / 6);
-      flex-basis: calc((100% - 150px) / 6);
+  /*flex-basis: calc((100% - 150px) / 6);*/
 }
 
 .clients-link__icon {

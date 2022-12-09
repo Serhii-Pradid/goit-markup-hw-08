@@ -6,8 +6,8 @@
 
 /*багатошаровий фон*/
 .hero {
-    max-width: 1600px;
-    height: 600px;
+    width: 480px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -15,17 +15,34 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media screen and (min-width: 720px) {
+        width: 720px;
+        height: 400px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1600px;
+        height: 600px;
+    }
+   
 }
 
 .hero__title {
-    width: 696px;
+    width: 360px;
     margin-right: auto;
     margin-left: auto;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3636;
+    font-size: 26px;
+    line-height: 1.6154;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.3636;
+    }
 }
 
 .hero__button {

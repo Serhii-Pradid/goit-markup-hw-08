@@ -4,13 +4,24 @@
 
 .clients-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: space-between;
     }
 
 .clients-list__logo {
     height: 92px;
-    flex-basis: calc((100% - 150px) / 6);
+       width: calc((100% - 30px) / 2);
+    
+        @media screen and (min-width: 720px) {
+           width: calc((100% - 60px) / 3);
+        }
+    
+        @media screen and (min-width: 1200px) {
+           width: calc((100% - 150px) / 6);
+        }
+
+    
 }
 
 .clients-list__link {
@@ -36,7 +47,7 @@
 
 .client-list__logo {
     height: 92px;
-    flex-basis: calc((100% - 150px) / 6);
+    /*flex-basis: calc((100% - 150px) / 6);*/
 }
 
 .clients-link__icon {

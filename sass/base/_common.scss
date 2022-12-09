@@ -10,8 +10,13 @@ img {
 }
 
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 198px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 280px;
+    } 
 }
 
 .title {
