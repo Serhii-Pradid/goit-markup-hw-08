@@ -89,9 +89,9 @@ p {
     max-width: 480px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -247,25 +247,37 @@ p {
 
 /*багатошаровий фон*/
 .hero {
-  width: 480px;
+  max-width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mob-1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob-1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 480px) {
   .hero {
-    width: 720px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tab-1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab-1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
     height: 400px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
   }
 }
@@ -300,9 +312,9 @@ p {
   letter-spacing: 0.06em;
   border: 0;
   border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 152px;
-  min-height: 30px;
+  /*padding: 10px 24px;*/
+  width: 200px;
+  height: 50px;
   margin-top: 30px;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -618,7 +630,7 @@ p {
   /*flex-basis: calc((100% - 90px) / 4);*/
   width: 100%;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .review__item {
     width: calc((100% - 30px) / 2);
   }
@@ -753,7 +765,7 @@ p {
   border: 1px solid #eeeeee;
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .team-list__item {
     width: calc((100% - 30px) / 2);
   }
@@ -838,7 +850,7 @@ p {
   height: 92px;
   width: calc((100% - 30px) / 2);
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .clients-list__logo {
     width: calc((100% - 60px) / 3);
   }
