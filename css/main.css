@@ -335,14 +335,27 @@ p {
   position: fixed;
   top: 0;
   left: 50%;
-  width: 1600px;
-  height: 1024px;
+  width: 480px;
+  height: 796px;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
   background: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+}
+@media screen and (min-width: 768px) {
+  .backdrop {
+    width: 768px;
+    height: 1024px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    width: 1600px;
+    height: 1024px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -361,7 +374,8 @@ p {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 528px;
+  width: 450px;
+  height: 609px;
   background: #ffffff;
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -370,6 +384,12 @@ p {
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__button {
@@ -438,7 +458,7 @@ p {
 }
 
 .form-field__input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   padding: 12px 42px;
   margin: 0;
@@ -452,6 +472,11 @@ p {
 }
 .form-field__input:focus {
   border-color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .form-field__input {
+    width: 448px;
+  }
 }
 
 .form-field__icon {
@@ -530,8 +555,8 @@ p {
 
 .policy__check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   display: -webkit-box;
@@ -540,6 +565,12 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .policy__check-text {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .policy__wrapper {
@@ -905,6 +936,7 @@ p {
 }
 
 .footer {
+  /*width: 480px;*/
   background-color: var(--main-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
