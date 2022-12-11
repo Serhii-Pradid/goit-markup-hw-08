@@ -18,7 +18,7 @@
   </head>
   <body>
     <!--Шапка-->
-    <!--
+    
       <header class="header">
       <div class="container header__container">
         <nav class="navigation header__navigation">
@@ -48,9 +48,28 @@
               +38 096 111 11 11</a
             >
           </li>
+          </ul>
+          <!-- <button type="button" class="mob-menu">
+        <svg class="mob-menu-icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-close-black"></use>
+      </button>
+      
+      <div class="mobile-menu">
+        <svg class="mob__menu-icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+        <ul class="mobile-menu list">
+          <li class="menu__item">
+            <a class="menu__link current" href="./index.html">Студія</a>
+          </li>
+          <li class="menu__item"><a class="menu__link" href="./portfolio.html">Портфоліо</a></li>
+          <li class="menu__item"><a class="menu__link" href="">Контакти</a></li>
         </ul>
       </div>
-    </header> -->
+    -->
+      </div>
+     
+    </header>
 
     <!--Заказ услуги-->
     <!--Основной контент-->
@@ -237,9 +256,18 @@
           <ul class="team-list list">
             <li class="team-list__item">
               <picture>
-                <source srcset="">
-                <source srcset="">
-                <source srcset="">
+                <source 
+                srcset="./images/staff1.jpg 1x .images/staff1-2x.jpg 2x"
+                media="(min-width:1200px)"
+                />
+                <source 
+                srcset="./images/staff1-tab-1x.jpg 1x .images/staff1-tab-2x.jpg 2x"
+                media="(min-width:768px)"
+                />
+                <source 
+                srcset="./images/staff1-mob-1x.jpg 1x .images/staff1-mob-2x.jpg 2x"
+                media="(min-width:480px)"
+                />
               <img src="./images/staff1.jpg" alt="фото співробітника 1" width="270" />
             </picture>
               <div class="team-list__card">
@@ -498,7 +526,7 @@
           </ul>
         </div>
 
-      -->
+      
 
         <!--підписка-->
         <!--

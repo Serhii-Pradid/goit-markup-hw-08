@@ -27,7 +27,7 @@
 }
 
 .menu {
-    display: flex;
+    display: none;
     margin-left: 93px;
     gap: 50px;
 }
@@ -73,10 +73,11 @@
 }
 
 .header__contacts {
-    display: flex;
+    display: none;
     margin-left: auto;
     gap: 50px;
-}
+
+    }
 
 .icon-color {
     margin-right: 10px;
