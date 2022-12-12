@@ -49,25 +49,63 @@
             >
           </li>
           </ul>
-          <!-- <button type="button" class="mob-menu">
-        <svg class="mob-menu-icon" width="40" height="40">
-          <use href="./images/icons.svg#icon-close-black"></use>
-      </button>
-      
-      <div class="mobile-menu">
-        <svg class="mob__menu-icon" width="40" height="40">
+          <button data-menu-open type="button" class="mob-menu" >
+               <svg class="mob-menu-icon" width="40" height="40">
+               <use href="./images/icons.svg#icon-menu_24px"></use>
+              </svg>
+          </button>
+
+      <div class="mobile-menu is-hidden" data-menu>
+       <div class="container">
+        <button data-menu-close type="button" class=" mobile-menu-button" >
+        <svg class="mobile-menu-icon" width="40" height="40">
           <use href="./images/icons.svg#icon-close-black"></use>
         </svg>
-        <ul class="mobile-menu list">
-          <li class="menu__item">
-            <a class="menu__link current" href="./index.html">Студія</a>
+        </button>
+        <ul class="menu-list list">
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="./index.html">Студія</a>
           </li>
-          <li class="menu__item"><a class="menu__link" href="./portfolio.html">Портфоліо</a></li>
-          <li class="menu__item"><a class="menu__link" href="">Контакти</a></li>
+          <li class="menu-list__item"><a class="menu-list__link" href="./portfolio.html">Портфоліо</a></li>
+          <li class="menu-list__item"><a class="menu-list__link" href="">Контакти</a></li>
         </ul>
-      </div>
-    -->
-      </div>
+      
+        <ul class="menu-contacts list">
+          <li class="menu-contacts__item">
+            <a class="menu-phone__link" href="tell:+380961111111">
+              +38 096 111 11 11
+            </a>
+            </li>
+          <li class="menu-contacts__item">
+            <a class="menu-mail__link" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+          </ul>
+          <ul class="menu-networks list">
+            <li class="menu-networks__item">
+              <a class="menu-networks__link" href="#">
+                Instagram
+              </a>
+            </li>
+            <li class="menu-networks__item">
+              <a class="menu-networks__link" href="#">
+                Tweeter
+              </a>
+            </li>
+            <li class="menu-networks__item">
+              <a class="menu-networks__link" href="#">
+                Facebook
+              </a>
+            </li>
+            <li class="menu-networks__item">
+              <a class="menu-networks__link" href="#">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+       </div>
+     </div>
      
     </header>
 
@@ -257,17 +295,14 @@
             <li class="team-list__item">
               <picture>
                 <source 
-                srcset="./images/staff1.jpg 1x .images/staff1-2x.jpg 2x"
-                media="(min-width:1200px)"
-                />
+                srcset="./images/staff1.jpg 1x, ./images/staff1-2x.jpg 2x"
+                media="(min-width:1200px)"/>
                 <source 
-                srcset="./images/staff1-tab-1x.jpg 1x .images/staff1-tab-2x.jpg 2x"
-                media="(min-width:768px)"
-                />
+                srcset="./images/staff1-tab-1x.jpg 1x, ./images/staff1-tab-2x.jpg 2x"
+                media="(min-width:768px)"/>
                 <source 
-                srcset="./images/staff1-mob-1x.jpg 1x .images/staff1-mob-2x.jpg 2x"
-                media="(min-width:480px)"
-                />
+                srcset="./images/staff1-mobile-1x.jpg 1x, ./images/staff1-mobile-2x.jpg 2x"
+                media="(min-width:480px)"/>
               <img src="./images/staff1.jpg" alt="фото співробітника 1" width="270" />
             </picture>
               <div class="team-list__card">
@@ -306,7 +341,18 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/staff2.jpg" alt="фото співробітника 2" width="270" />
+              <picture>
+                <source 
+                srcset="./images/staff2.jpg 1x, ./images/staff2-2x.jpg 2x"
+                media="(min-width:1200px)"/>
+                <source 
+                srcset="./images/staff2-tab-1x.jpg 1x, ./images/staff2-tab-2x.jpg 2x"
+                media="(min-width:768px)"/>
+                <source 
+                srcset="./images/staff2-mobile-1x.jpg 1x, ./images/staff2-mobile-2x.jpg 2x"
+                media="(min-width:480px)"/>
+                <img src="./images/staff2.jpg" alt="фото співробітника 2" width="270" />
+            </picture>
               <div class="team-list__card">
                 <h3 class="team-list__name">Ольга Рєпіна</h3>
                 <p class="team-list__text" lang="en">Frontend Developer</p>
@@ -343,7 +389,18 @@
               </div>
             </li>
             <li class="team-list__item">
+              <picture>
+                <source 
+                srcset="./images/staff3.jpg 1x, ./images/staff3-2x.jpg 2x"
+                media="(min-width:1200px)"/>
+                <source 
+                srcset="./images/staff3-tab-1x.jpg 1x, ./images/staff3-tab-2x.jpg 2x"
+                media="(min-width:768px)"/>
+                <source 
+                srcset="./images/staff3-mobile-1x.jpg 1x, ./images/staff3-mobile-2x.jpg 2x"
+                media="(min-width:480px)"/>
               <img src="./images/staff3.jpg" alt="фото співробітника 3" width="270" />
+            </picture>
               <div class="team-list__card">
                 <h3 class="team-list__name">Микола Тарасов</h3>
                 <p class="team-list__text" lang="en">Marketing</p>
@@ -380,7 +437,18 @@
               </div>
             </li>
             <li class="team-list__item">
+              <picture>
+                <source 
+                srcset="./images/staff4.jpg 1x, ./images/staff4-2x.jpg 2x"
+                media="(min-width:1200px)"/>
+                <source 
+                srcset="./images/staff4-tab-1x.jpg 1x, ./images/staff4-tab-2x.jpg 2x"
+                media="(min-width:768px)"/>
+                <source 
+                srcset="./images/staff4-mobile-1x.jpg 1x, ./images/staff4-mobile-2x.jpg 2x"
+                media="(min-width:480px)"/>
               <img src="./images/staff4.jpg" alt="фото співробітника 4" width="270" />
+            </picture>
               <div class="team-list__card">
                 <h3 class="team-list__name">Михайло Єрмаков</h3>
                 <p class="team-list__text" lang="en">UI Designer</p>
@@ -560,5 +628,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

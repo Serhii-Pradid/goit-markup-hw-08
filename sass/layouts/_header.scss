@@ -137,3 +137,125 @@
     color: var(--accent-color);
 }
 }
+
+
+.mob-menu {
+    display: flex;
+    border: none;
+    background: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    align-items: center;
+
+    @include tablet {
+        display: none;
+    }
+    }
+
+    .mob-menu-icon {
+    fill: #212121;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .mob-menu:focus & {
+    fill: var(--accent-color);
+}
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #ffffff;
+        padding-bottom: 48px;   
+        > .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        @include tablet {
+            display: none;
+        }
+    }
+
+    .mobile-menu-button {
+        display: block;
+        margin-top: 10px;
+        margin-left: auto;
+        border: none;
+        background-color: #ffffff;           
+    }
+
+    .mobile-menu-icon {
+        fill: #212121;
+        width: 100%;
+        height: 100%;
+
+        .mobile-menu-button:focus & {
+        fill: var(--accent-color);
+        }
+    }
+
+    .menu-list__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    .menu-list__link {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: calc(47 / 40);
+        letter-spacing: 0.02em;
+        color: #212121;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+
+    }
+.menu-contacts {
+    margin-top: 306px;
+}
+
+.menu-contacts__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+    .menu-mail__link {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: calc(28 / 24);
+        letter-spacing: 0.02em;
+        color: var(--main-text-color);
+        text-decoration: none;
+    }
+
+    .menu-phone__link {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: calc(40 / 34);
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+        text-decoration: none;
+    }
+
+    .menu-networks {
+        display: flex;
+        gap: 20px;
+        margin-top: 64px;
+    }
+
+    .menu-networks__link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: calc(22 / 18);           
+        letter-spacing: 0.02em; 
+        color: #2196F3;
+        text-decoration: none;
+    }
