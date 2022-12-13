@@ -16,14 +16,13 @@
         justify-content: space-between;
         text-align: center;
         align-items: center;   
+          
  }
  @media screen and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 165px;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
-    /*align-items: baseline;*/   
 }
 } 
 
@@ -129,8 +128,10 @@
     @media screen and (max-width: 1199px) {
         display: block;
         margin-top: 60px;
+        }    
     }    
-}
+
+
 
 .form-footer__wrapper {
     display: flex;
@@ -168,8 +169,10 @@
     color: #ffffff;
 
     @media screen and (max-width: 1199px) {
-        max-width: 450px;
+        width: 450px;
         margin-bottom: 20px;
+        margin-right: 0;
+        
     }    
 }
 

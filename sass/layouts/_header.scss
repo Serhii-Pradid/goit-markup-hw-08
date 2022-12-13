@@ -1,6 +1,7 @@
 .header {
     background-color: #ffff;
     border-bottom: 1px solid #ececec;
+    
 }
 
 .header__container {
@@ -168,12 +169,14 @@
     .mobile-menu {
         position: fixed;
         top: 0;
+        z-index: 1;
         width: 100vw;
         height: 100vh;
         background-color: #ffffff;
         padding-bottom: 48px;
         padding-left: 40px;
         
+
         > .container {
             height: 100%;
             display: flex;

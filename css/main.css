@@ -307,6 +307,7 @@ p {
 .mobile-menu {
   position: fixed;
   top: 0;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
@@ -1199,14 +1200,9 @@ p {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-column-gap: 165px;
-       -moz-column-gap: 165px;
-            column-gap: 165px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     text-align: center;
-    /*align-items: baseline;*/
   }
 }
 
@@ -1367,8 +1363,9 @@ p {
 }
 @media screen and (max-width: 1199px) {
   .form-footer__input {
-    max-width: 450px;
+    width: 450px;
     margin-bottom: 20px;
+    margin-right: 0;
   }
 }
 
@@ -1411,11 +1408,32 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  row-gap: 15px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .buttons {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buttons {
+    margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+  }
 }
 
 .buttons__item {
@@ -1467,10 +1485,17 @@ p {
 
 .examples__card {
   background-color: #ffffff;
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
-  /*text-align: center;*/
-  /*position: relative;*/
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .examples__card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .examples__card {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .examples__link {

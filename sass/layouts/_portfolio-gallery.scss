@@ -3,14 +3,20 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: space-between;
+    
 }
 
 .examples__card {
     background-color: #ffffff;
-    flex-basis: calc((100% - 60px) / 3);
-    /*text-align: center;*/
 
-    /*position: relative;*/
+    width: 100%;
+    @include tablet {
+         width: calc((100% - 30px)/2);
+    }
+    @include desktop {
+        width: calc((100% - 60px)/3);
+    }
+    
 }
 
 .examples__link {
