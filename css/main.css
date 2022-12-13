@@ -1145,17 +1145,34 @@ p {
   padding-bottom: 60px;
 }
 
-/*.main-footer__container {
+.main-footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
 
+@media screen and (max-width: 767px) {
+  .main-footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
-
-    @include tablet {    
-        width: 768px;
-        }
-    @include desktop {
-        width: 1600px; 
-    } 
-}*/
 .footer-div__logo-footer {
   display: inline-block;
   margin-bottom: 20px;
@@ -1195,8 +1212,16 @@ p {
   color: var(--accent-color);
 }
 
-.join {
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .join {
+    display: block;
+    margin-top: 60px;
+  }
 }
 
 .join-us {
@@ -1251,17 +1276,16 @@ p {
   background-color: var(--accent-color);
 }
 
-.main-footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .form-footer {
+    margin-left: auto;
+  }
 }
-
-.form-footer {
-  margin-left: auto;
+@media screen and (max-width: 767px) {
+  .form-footer {
+    display: block;
+    margin-top: 60px;
+  }
 }
 
 .form-footer__wrapper {
@@ -1269,6 +1293,18 @@ p {
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .form-footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .form-footer__title {
@@ -1291,6 +1327,12 @@ p {
   border-radius: 4px;
   outline: transparent;
   color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .form-footer__input {
+    max-width: 450px;
+    margin-bottom: 20px;
+  }
 }
 
 .form-case__submit {
