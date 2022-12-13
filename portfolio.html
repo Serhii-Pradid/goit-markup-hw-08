@@ -48,7 +48,69 @@
             >
           </li>
         </ul>
+        <button data-menu-open type="button" class="mob-menu" >
+          <svg class="mob-menu-icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu_24px"></use>
+         </svg>
+        </button>
       </div>
+
+      <div class="mobile-menu is-hidden" data-menu>
+        <div class="container">
+         <button data-menu-close type="button" class=" mobile-menu-button" >
+         <svg class="mobile-menu-icon" width="40" height="40">
+           <use href="./images/icons.svg#icon-close-black"></use>
+         </svg>
+         </button>
+ 
+         <ul class="menu-list list">
+           <li class="menu-list__item">
+             <a class="menu-list__link" href="./index.html">Студія</a>
+           </li>
+           <li class="menu-list__item"><a class="menu-list__link" href="./portfolio.html">Портфоліо</a></li>
+           <li class="menu-list__item"><a class="menu-list__link" href="">Контакти</a></li>
+         </ul>
+       
+         <ul class="menu-contacts list">
+           <li class="menu-contacts__item">
+             <a class="menu-phone__link" href="tell:+380961111111">
+               +38 096 111 11 11
+             </a>
+             </li>
+           <li class="menu-contacts__item">
+             <a class="menu-mail__link" href="mailto:info@devstudio.com">
+               info@devstudio.com
+             </a>
+           </li>
+           </ul>
+ 
+           <ul class="menu-networks list">
+             <li class="menu-networks__item">
+               <a class="menu-networks__link" href="#">
+                 Instagram
+               </a>
+             </li>
+             <li class="menu-networks__item">
+               <a class="menu-networks__link" href="#">
+                 Tweeter
+               </a>
+             </li>
+             <li class="menu-networks__item">
+               <a class="menu-networks__link" href="#">
+                 Facebook
+               </a>
+             </li>
+             <li class="menu-networks__item">
+               <a class="menu-networks__link" href="#">
+                 LinkedIn
+               </a>
+             </li>
+           </ul>
+           
+        </div>
+      </div>
+        
+      
     </header>
 
     <!--Основний контент-->
@@ -64,7 +126,6 @@
             <li><button class="buttons__item" type="button">Дизайн</button></li>
             <li><button class="buttons__item" type="button">Маркетинг</button></li>
           </ul>
-
           <ul class="examples list">
             <li class="examples__card">
               <a class="examples__link" href="#">
@@ -214,7 +275,7 @@
         </div>
       </section>
     </main>
-
+  -->
     <footer class="footer">
       <div class="container main-footer__container">
         <div class="footer-div">
@@ -264,7 +325,9 @@
             </li>
           </ul>
         </div>
+      
         <!--підписка-->
+        
         <div class="form-footer">
           <form class="form-footer__title">
             <b>підпишіться на розсилку</b>
@@ -289,9 +352,11 @@
               </div>
             </div>
           </form>
-        </div>
+        </div> 
         <!--підписка-->
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
+
   </body>
 </html>

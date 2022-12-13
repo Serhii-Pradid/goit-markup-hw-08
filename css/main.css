@@ -311,6 +311,7 @@ p {
   height: 100vh;
   background-color: #ffffff;
   padding-bottom: 48px;
+  padding-left: 40px;
 }
 .mobile-menu > .container {
   height: 100%;
@@ -416,6 +417,10 @@ p {
   margin-top: 64px;
 }
 
+.menu-networks__item {
+  position: relative;
+}
+
 .menu-networks__link {
   font-weight: 500;
   font-size: 18px;
@@ -423,6 +428,21 @@ p {
   letter-spacing: 0.02em;
   color: #2196F3;
   text-decoration: none;
+}
+
+.menu-networks__link::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 0px;
+  top: 10px;
+  left: -21px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 1px;
 }
 
 .hero {
@@ -1172,6 +1192,23 @@ p {
             align-items: center;
   }
 }
+@media screen and (max-width: 1199px) {
+  .main-footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 165px;
+       -moz-column-gap: 165px;
+            column-gap: 165px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    /*align-items: baseline;*/
+  }
+}
 
 .footer-div__logo-footer {
   display: inline-block;
@@ -1281,7 +1318,7 @@ p {
     margin-left: auto;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .form-footer {
     display: block;
     margin-top: 60px;
@@ -1294,7 +1331,7 @@ p {
   display: flex;
   margin-top: 20px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .form-footer__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1328,7 +1365,7 @@ p {
   outline: transparent;
   color: #ffffff;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .form-footer__input {
     max-width: 450px;
     margin-bottom: 20px;
@@ -1372,6 +1409,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 8px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
