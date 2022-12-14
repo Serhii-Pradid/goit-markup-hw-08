@@ -199,6 +199,8 @@
 
     .mobile-menu-button {
         display: block;
+        width: 40px;
+        height: 40px;
         margin-top: 10px;
         margin-left: auto;
         border: none;
@@ -279,6 +281,7 @@
         display: flex;
         gap: 20px;
         margin-top: 64px;
+        flex-wrap: wrap;
         
     }
 
